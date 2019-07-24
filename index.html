@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Palette</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Webpack App</title>
+</head>
+<body>
+<header class="header">
+  <i class="fas fa-bars"></i>
+  <h1>CodeJam - Animation Player</h1>
+  <i class="fas fa-ellipsis-v"></i>
+</header>
+<div class="container">
+  <div class="control">
+    <div class="tool">
+      <div class="bucket">
+        <i class="fas fa-fill-drip"></i><span>Paint bucket</span>
+      </div>
+      <div class="choose-color">
+        <i class="fas fa-eye-dropper"></i><span>Choose color</span>
+      </div>
+      <div class="move">
+        <i class="fas fa-arrows-alt"></i><span>Move</span>
+      </div>
+      <div class="transform">
+        <i class="fas fa-exchange-alt"></i><span>Transform</span>
+      </div>
+    </div>
+    <div class="color">
+      <div class="curr-color">
+        <div class="current-color pick-color"></div>
+        <span>Current color</span>
+      </div>
+      <div class="prev_color">
+        <div class="prev-color pick-color"></div>
+        <span>Prev color</span>
+      </div>
+      <div class="predefined-color">
+        <div><div class="red pick-color"></div><span>Red</span></div>
+        <div><div class="blue pick-color"></div><span>Blue</span></div>
+        <div><div class="green pick-color"></div><span>Green</span></div>
+        <div><div class="yellow pick-color"></div><span>Yellow</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="frames">
+    <div class="frames_section"></div>
+    <button class="add-frame" type="button">Add</button>
+  </div>
+  <div class="canvas">
+    <div class="parent-fig"><div class="figure" id="0"></div></div>
+    <div class="parent-fig"><div class="figure" id="1"></div></div>
+    <div class="parent-fig"><div class="figure" id="2"></div></div>
+    <div class="parent-fig"><div class="figure" id="3"></div></div>
+    <div class="parent-fig"><div class="figure" id="4"></div></div>
+    <div class="parent-fig"><div class="figure" id="5"></div></div>
+    <div class="parent-fig"><div class="figure" id="6"></div></div>
+    <div class="parent-fig"><div class="figure" id="7"></div></div>
+    <div class="parent-fig"><div class="figure" id="8"></div></div>
+  </div>
+  <div class="preview">
+    <button class="preview_fullscreen">Full Screen Mode</button>
+    <canvas class="preview_canvas"></canvas>
+    <div class="slide-container">
+      <input type="range" min="1" max="24" value="2" class="slider" id="rangeFPS">
+      <label for="rangeFPS" class="fps-value">FPS: 2</label>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
+
